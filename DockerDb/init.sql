@@ -1,0 +1,1 @@
+/* Crie suas tabelas (pelo menos de clientes e pedidos) */
