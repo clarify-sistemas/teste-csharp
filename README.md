@@ -50,7 +50,7 @@ Para ajudar no seu desenvolvimento, já fornecemos um pré-setup com a estrutura
    O projeto já está configurado para utilizar um banco de dados PostgreSQL em um container Docker. Execute o seguinte comando para subir o banco de dados:
 
 ```bash
-docker run --name pgtestecfy -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -e POSTGRES_DB=teste_cfy -p 5432:5432 -d postgres:latest
+docker run --name pgtestecfy -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -e POSTGRES_DB=teste_cfy -p 5432:5432 -v pgtestedata:/var/lib/postgresql/data -d postgres:latest
 ```
 Isso iniciará o container PostgreSQL com o banco de dados necessário já configurado.
 
